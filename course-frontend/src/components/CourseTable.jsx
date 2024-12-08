@@ -21,7 +21,7 @@ const CourseTable = () => {
 
   useEffect(() => {
     axios
-      .get("https://course-app-3q5a.onrender.com/courses")
+      .get("http://localhost:5000/courses")
       .then((response) => {
         setCourses(response.data);
         console.log("Courses fetched:", response.data);
